@@ -25,10 +25,10 @@
 Welcome to my GitHub profile! I'm **Pavan Patel**, a passionate cybersecurity and blockchain developer focused on building secure, decentralized solutions. With expertise spanning full-stack development, smart contract architecture, and security auditing, I'm dedicated to creating robust applications that prioritize security and user experience.
 
 ### 🎯 Current Focus
-- 🔭 **Building:** [VeriServe](https://github.com/CODER7657/VeriServe_block) - Blockchain Certificate Verification System
-- 🌱 **Learning:** Advanced Solidity, Smart Contract Security, Zero-Knowledge Proofs
-- 👯 **Collaborating:** On blockchain-based security projects and DeFi protocols
-- 🔍 **Researching:** Layer 2 scaling solutions and cross-chain interoperability
+- 🔭 **Building:** [kisan_mitra](https://github.com/CODER7657/kisan_mitra) - Smart Agricultural Diagnostic Platform & [namaste-icd11-integration](https://github.com/CODER7657/namaste-icd11-integration) - ICD-11 Health Data Microservice
+- 🌱 **Learning:** Advanced Solidity, Smart Contract Security, Zero-Knowledge Proofs, ML for Agri & Health Data
+- 👯 **Collaborating:** On AI-driven AgriTech and HealthTech integrations
+- 🔍 **Researching:** Multimodal AI for real-world impact, scalable compliance and diagnostics
 
 ---
 
@@ -51,6 +51,16 @@ Welcome to my GitHub profile! I'm **Pavan Patel**, a passionate cybersecurity an
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Ant Design](https://img.shields.io/badge/AntDesign-0170FE?style=for-the-badge&logo=ant-design&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-FF4A4A?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![yfinance](https://img.shields.io/badge/yfinance-003366?style=for-the-badge&logo=python&logoColor=white)
 
 ---
 
@@ -58,77 +68,88 @@ Welcome to my GitHub profile! I'm **Pavan Patel**, a passionate cybersecurity an
 
 ### 🚀 Original Projects
 
-#### 📝 [HASHHAWKS](https://github.com/CODER7657/HASHHAWKS)
+#### 📝 [HASHHAWKS](https://github.com/CODER7657/HashHawks1)
 **TypeScript | Blockchain Development Platform**
-- • Advanced blockchain development environment with comprehensive tooling
-- • Built with modern TypeScript architecture for scalability  
-- • Features include smart contract deployment, testing framework, and analytics dashboard
+- • Advanced blockchain dev environment & tooling
+- • Modern TS architecture, smart contract deploy/test/playground
 
 #### 🌐 [myselfpavan](https://github.com/CODER7657/myselfpavan)
-**JavaScript | Personal Portfolio & Development Showcase**
-- • Interactive portfolio showcasing full-stack development capabilities
-- • Dynamic content management with modern JavaScript frameworks
-- • Responsive design with optimized performance and SEO
+**JavaScript | Personal Portfolio & Showcase**
+- • Interactive personal dev portfolio
+- • Full-stack, dynamic content, SEO optimized
 
 #### 📜 [VeriServe_block](https://github.com/CODER7657/VeriServe_block)
-**JavaScript | Blockchain Certificate Verification System**
-- • Decentralized certificate verification platform using blockchain technology
-- • Smart contract implementation for tamper-proof credential management
-- • User-friendly interface for institutions and certificate holders
+**JavaScript | Blockchain Certificate Verification**
+- • Decentralized, tamper-proof credential management
+- • Institution & individual-friendly UX
 
 #### 🔄 [VortiFi](https://github.com/CODER7657/VortiFi)
 **JavaScript | Decentralized Voting dApp**
-- • Decentralized voting dApp with secure blockchain-based voting mechanisms
-- • Advanced smart contract architecture with security auditing features
-- • Integration with multiple blockchain networks for cross-chain compatibility
+- • Blockchain-based voting, smart contract security, cross-chain
 
 #### 💼 [portfolio2](https://github.com/CODER7657/portfolio2)
 **TypeScript | Enhanced Portfolio Platform**
-- • Modern portfolio platform built with TypeScript for type safety
-- • Advanced UI/UX with interactive components and animations
-- • Integrated project showcase with live demo capabilities
+- • Modern portfolio platform, UI/UX, integrated showcase
 
-#### 🔒 [cyber-web3-bloom](https://github.com/CODER7657/cyber-web3-bloom)
-**TypeScript | Cybersecurity & Web3 Integration Platform (Private)**
-- • Cutting-edge cybersecurity tools integrated with Web3 technologies
-- • Advanced threat detection and blockchain security analysis
-- • Enterprise-grade security solutions for decentralized applications
+#### 🔒 [cyber-web3-bloom](https://github.com/CODER7657/cyber-web3-bloom) *(Private)*
+**TypeScript | Cybersecurity & Web3 Integration Platform**
+- • Web3/cybersecurity tools, threat detection
 
 #### 🐍 [codes-](https://github.com/CODER7657/codes-)
 **Python | Programming Solutions & Algorithms**
-- • Comprehensive collection of algorithmic solutions and coding challenges
-- • Optimized Python implementations with detailed documentation
-- • Educational resource for data structures and algorithms
+- • Algorithmic challenges, DSA with explanations
 
 #### 📄 [CODER7657](https://github.com/CODER7657/CODER7657)
-**Profile Repository | Professional GitHub Profile**
-- • Dynamic and comprehensive GitHub profile README
-- • Showcases technical skills, projects, and professional achievements
-- • Regularly updated with latest accomplishments and technologies
+**Profile Repository | This profile README**
+
+### 🆕 New & Major Recent Projects
+
+#### ⚖️ [complylite](https://github.com/CODER7657/complylite)
+**Python, FastAPI, React, Ant Design, Docker, DuckDB**
+- Lightweight compliance co-pilot for brokers
+- Rule-based & ML detection, dashboarding, audit-ready
+
+#### 🌾 [kisan_mitra](https://github.com/CODER7657/kisan_mitra) *(Private)*
+**Python (FastAPI), SvelteKit/TypeScript, OpenAI/Whisper**
+- AI-driven platform for agri video/audio diagnostics, insights, and multilingual reporting
+
+#### 🏩 [namaste-icd11-integration](https://github.com/CODER7657/namaste-icd11-integration) *(Private/Early)*
+**Docker, Shell, HTML/JS (Python in progress)**
+- Microservice for ICD-11 health data integration
+
+#### 📊 [port_stock](https://github.com/CODER7657/port_stock)
+**Python, yfinance, prettytable**
+- CLI stock portfolio tracker: real data, gain/loss, user-friendly
+
+#### 🎤 [voice-emotion-detection](https://github.com/CODER7657/voice-emotion-detection)
+**Python, TensorFlow, PyQt5**
+- Real-time CNN for audio emotion detection, both GUI & CLI
+
+---
 
 ### 🔗 Forked Projects with Major Contributions
 
 #### 🔐 [Quantum Chat](https://github.com/CODER7657/quantum_crypto)
 **JavaScript | Quantum Cryptography Implementation**
-- • *Forked from [Ayush3422/quantum_crypto](https://github.com/Ayush3422/quantum_crypto), with extensive contributions by Pavan Patel*
-- • Advanced quantum cryptography algorithms and implementations
-- • Comprehensive security analysis and optimization improvements
-- • Enhanced user interface and documentation for better accessibility
+- • Forked from [Ayush3422/quantum_crypto](https://github.com/Ayush3422/quantum_crypto)
+- • Advanced quantum crypto, major UI and security contributions
 
 #### 🎮 [hashhawks-3d-showcase](https://github.com/CODER7657/hashhawks-3d-showcase)
-**TypeScript | 3D Interactive Showcase Platform**
-- • *Forked from [Ayush3422/hashhawks-3d-showcase](https://github.com/Ayush3422/hashhawks-3d-showcase), with full development by Pavan Patel*
-- • Immersive 3D web experience showcasing blockchain and gaming integration
-- • Advanced Three.js implementation with WebGL optimization
-- • Interactive elements and dynamic content management system
-
-### 📊 Project Statistics
-• **Total Repositories:** 10 (8 Original + 2 Enhanced Forks)  
-• **Primary Languages:** TypeScript, JavaScript, Python  
-• **Focus Areas:** Blockchain, Cybersecurity, Full-Stack Development  
-• **Active Development:** 8 repositories updated within the last month
+**TypeScript | 3D Interactive Blockchain Showcase**
+- • Forked from [Ayush3422/hashhawks-3d-showcase](https://github.com/Ayush3422/hashhawks-3d-showcase)
+- • 3D web, Three.js, contributed immersive content & features
 
 ---
+
+### 📊 Project Statistics
+
+• **Total Repositories:** 17 (12 Original + 5 Major Forks)  
+• **Primary Languages:** TypeScript, JavaScript, Python  
+• **Focus Areas:** Blockchain, Cybersecurity, AgriTech, HealthTech, Full-Stack Development  
+• **Active Development:** 10+ repositories updated within the last month
+
+---
+
 
 ## 📈 GitHub Analytics
 
