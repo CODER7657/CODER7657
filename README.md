@@ -94,45 +94,67 @@ danger is a design I won't ship.
 
 ---
 
-## 03 · I write the exams frontier agents fail
+## 03 · Evals: I write the exams frontier agents fail
 
-Container-isolated benchmark tasks: one sealed image, a prompt, a digest-pinned environment, a
-reference solution, and a verifier that has to be impossible to cheat.
+**22 tasks authored.** Each one ships as a Harbor task: a sealed Docker image, a prompt, a
+digest-pinned environment, a reference solution, and a verifier built to be un-gameable. The
+subject matter is just substrate — the product is a measurement you can trust.
 
-`▸` **Nonlinear dynamics.** Two-module enzymatic oscillator, four coupled ODEs, shared cofactor
-pool. Recover three hidden rate constants from a noisy partial series, forecast under a new feed
-rate, then locate and *classify* the Hopf bifurcation where oscillation starts. The difficulty
-lives in the first Lyapunov coefficient. Expert time estimate: **8 hours.**
-
-`▸` **SQL that punishes shortcuts.** Weekly retention cohorts over an event log carrying every
-scar of a real pipeline — webhook retries, mixed timezone offsets, and identity merges that are
-**time-gated and multi-hop**. An event before a merge must not route through it; a later event
-with the same raw id must. Canonical-id resolution stops being a lookup and becomes a walk.
+Every task is proven against three runs before it counts:
 
 <img src="assets/verifier.svg" width="100%" alt="Oracle scores 1.00, an agent that does nothing scores 0.00, and a solution sabotaged on purpose also scores 0.00" />
 
-**The verifier matters more than the task.** A grader that asks *"did a file appear?"* loses to
-`touch`. So I corrupt one field of my own reference solution and re-run: three tests still pass,
-the fourth catches it, **reward drops to zero.** Only then is the task real.
+`▸` **oracle → 1.00.** The reference solution must clear its own verifier. If it can't, the task is
+broken, not hard.
+`▸` **nop agent → 0.00.** An agent that does nothing must score nothing. This is the check that
+catches graders satisfied by an empty file.
+`▸` **sabotaged → 0.00.** I corrupt one field of my own solution and re-run. Three tests still pass;
+**the fourth catches it.** Field-level, not file-exists.
+
+### Making a task hard without making it unfair
+
+A task an agent fails for the wrong reason measures nothing. The techniques I build with, and the
+line each one respects:
+
+| Technique | The trap | Why it's still fair |
+|---|---|---|
+| **Latent crux** | The deciding case never appears in the data the agent can see | The rule is real and determinate — the agent's own diligence is what betrays it |
+| **Wrong-default lure** | An obvious cheap heuristic that is *almost* equivalent to the correct rule | Both are derivable; they diverge only where the shortcut was always wrong |
+| **Misdirection** | The environment ships a confident tool that names the wrong answer | Verifying your tools against ground truth is the actual job |
+| **Evidence-forced reverse engineering** | An undocumented convention must be recovered from observation alone | Every convention is forced by data the agent can read |
+| **Discovery hop** | A final opaque step with no partial feedback | The hard part is solved before the hop; the hop can't be brute-forced |
+
+The failure signature that tells you a trap landed: **every failing agent returns a byte-identical
+wrong answer**, because they all reached for the same shortcut.
+
+### The gate before any of it ships
+
+A **30-check QC pass** across five families — oracle correctness, contract determinacy, verifier
+rigor, environment hygiene, instruction clarity. Every check is Major: one failure fails the task.
 
 <details>
-<summary><b>Repair work — what I fix in a benchmark that's already broken</b></summary>
+<summary><b>A sample of what those checks kill</b></summary>
 
 <br />
 
-| Defect | Why it invalidates the benchmark |
+| Check | What it catches |
 |---|---|
-| Artifact path pointed where nothing was written | Every run fails for a reason unrelated to the agent |
+| Oracle fails its own verifier | The reference wouldn't score full reward as shipped |
+| Hardcoded answer in the reference | A constant baked in rather than computed from visible inputs |
+| Oracle relies on privileged access | It reads a fixture the agent could never reconstruct |
+| Ambiguous rule, no disambiguation | Two reasonable readings, two different graded answers |
+| Undocumented requirement enforced | The verifier enforces a threshold stated nowhere |
+| Partial / stub output accepted | A report-only stub clears the bar without doing the work |
+| Over-permissive tolerance | A materially wrong answer lands inside the margin |
 | Unpinned base image | The environment drifts; last month's score means nothing |
 | Reference solution left in the agent's image | The agent reads the answer instead of solving |
-| Verifier checked existence, not values | `touch output.json` scores full marks |
 | Reward written to the wrong path | Silent zero, forever |
-| Vague instructions, unnumbered criteria | Two graders, two scores, no signal |
-
-Proof: a deliberately bugged solution failed **only** the test tied to the corrupted field. The
-other three passed. Field-level, not file-exists.
 
 </details>
+
+Same rule on the product side: *no accuracy number* is worse than a bad one — so the eval corpus
+is held out of the retrieval store, scored per language, and run in CI. A system graded on its own
+notes is fiction.
 
 ---
 
@@ -167,7 +189,7 @@ Same discipline, different domains. Every one of these is code I wrote, not a te
 | | |
 |---|---|
 | **[Voice emotion detection](https://github.com/CODER7657/voice-emotion-detection)** | CNN over RAVDESS, real-time classification from live audio, with a test harness |
-| **Benchmark task suite** | Authored + repaired agent-benchmark tasks — scientific computing and analytical SQL (§03) |
+| **[Harbor task repair](https://github.com/CODER7657/fix-broken-Terminal-Bench-2-Harbor-)** | Taking a broken benchmark task apart — leaked solution, gameable verifier, wrong reward path — and making it measure something (§03) |
 
 ---
 
