@@ -1,224 +1,196 @@
-# 🚀 Pavan Patel | Cybersecurity & Blockchain Developer
+<img src="assets/hero.svg" width="100%" alt="Pavan Patel — I build AI systems that must not be wrong, and the evals that prove when they are" />
 
 <p align="center">
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=Full-Stack+Blockchain+Developer;Cybersecurity+Enthusiast;Smart+Contract+Architect;Open+Source+Contributor" alt="Typing Animation" />
-</a>
+  <a href="https://myselfpavan.vercel.app"><img src="https://img.shields.io/badge/portfolio-myselfpavan-0b1119?style=flat-square&labelColor=0b1119&color=4dd6ff" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/pavan-patel-559195261/"><img src="https://img.shields.io/badge/linkedin-connect-0b1119?style=flat-square&labelColor=0b1119&color=3ee08f" alt="LinkedIn" /></a>
+  <a href="https://x.com/pavan_pate78009"><img src="https://img.shields.io/badge/x-@pavan__pate78009-0b1119?style=flat-square&labelColor=0b1119&color=8aa0b4" alt="X" /></a>
+  <a href="mailto:pavanpatela5598@gmail.com"><img src="https://img.shields.io/badge/mail-open-0b1119?style=flat-square&labelColor=0b1119&color=ffc857" alt="Email" /></a>
 </p>
 
-[![Profile Views](https://komarev.com/ghpvc/?username=CODER7657&label=Profile%20Views&color=0e75b6&style=flat)](https://github.com/CODER7657) [![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=CODER7657&theme=onedark&no-frame=true&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+> Bad systems fail loudly. Mine would fail **quietly** — a scam gets through, a benchmark scores
+> an agent that did nothing, a model invents a reason and everyone believes it.
+> So I build the thing. Then I build the thing that catches it lying.
 
 ---
 
-## 📋 Table of Contents
-- [👨‍💻 Introduction](#-introduction)
-- [🛠️ Technical Skills](#️-technical-skills)
-- [🏆 Project Highlights](#-project-highlights)
-- [📈 GitHub Analytics](#-github-analytics)
-- [🤝 Community & Open Source](#-community--open-source)
-- [📬 Connect With Me](#-connect-with-me)
+## 01 · The system
+
+**Raksha AI** — real-time fraud interception for first-time digital payers, in the language they actually speak.
+
+<img src="assets/pipeline.svg" width="100%" alt="Interception pipeline: rules first, retrieval second, model last" />
+
+Rules run **first** — on device, no network. Retrieval runs **second**, so the model argues from
+evidence, not vibes. The model runs **last**, and only explains a verdict it was handed. It never
+invents one.
+
+| | |
+|---|---|
+| **Surface** | Android (Kotlin) · React 19 + TypeScript · FastAPI |
+| **Retrieval** | Postgres + `pgvector`, embeddings computed locally — zero API cost per scan |
+| **Judgement** | Primary model, automatic fallback, grounded on top-k retrieved patterns |
+| **Voice** | Call snippets transcribed on-box, then down the same path as text |
+| **Reach** | 12 languages, both scripts, in and out |
+| **Privacy** | Row-Level Security — scan history is invisible to everyone, me included |
+| **Scale** | 82 commits · 204 files · 4 people · 97 PRs, every one reviewed |
+
+<details>
+<summary><b>The hard parts</b></summary>
+
+<br />
+
+- **Semantic caching.** The same scam hits thousands of times. Judging it twice is money on fire — identical text resolves from cache and never reaches a model.
+- **Provenance in the trace.** Every verdict records where each pattern came from. A verdict you can't trace is a rumour.
+- **Silent failure is the real bug.** The app now says out loud when scanning works but the warning can't reach the user. A green tick over a broken pipe beats no tick at all — for the wrong reasons.
+- **Earned confidence only.** No corpus behind a verdict? It says so.
+- **R8 on for release**, CI proving shrinking didn't break it, artifacts signed.
+
+</details>
 
 ---
 
-## 👨‍💻 Introduction
+## 02 · Agents, and the line they don't cross
 
-Welcome to my GitHub profile! I'm **Pavan Patel**, a passionate cybersecurity and blockchain developer focused on building secure, decentralized solutions. With expertise spanning full-stack development, smart contract architecture, and security auditing, I'm dedicated to creating robust applications that prioritize security and user experience.
+Seven agents run across this system. **Not one sits between a user and a verdict they act on in seconds.**
 
-### 🎯 Current Focus
-- 🔭 **Building:** [kisan_mitra](https://github.com/CODER7657/kisan_mitra) - Smart Agricultural Diagnostic Platform & [namaste-icd11-integration](https://github.com/CODER7657/namaste-icd11-integration) - ICD-11 Health Data Microservice
-- 🌱 **Learning:** Advanced Solidity, Smart Contract Security, Zero-Knowledge Proofs, ML for Agri & Health Data
-- 👯 **Collaborating:** On AI-driven AgriTech and HealthTech integrations
-- 🔍 **Researching:** Multimodal AI for real-world impact, scalable compliance and diagnostics
+<img src="assets/agents.svg" width="100%" alt="Seven agents behind a hard boundary, a human review gate, and a rogue action blocked at the line" />
 
----
+> **The rule:** agents go where the work is open-ended and a human can review it.
+> Never in the hot path. Speed, determinism and auditability aren't tradeable there.
 
-## 🛠️ Technical Skills
-
-### **Blockchain & Smart Contracts**
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)
-![Web3.js](https://img.shields.io/badge/Web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
-![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=for-the-badge&logo=hardhat&logoColor=black)
-
-### **Programming Languages**
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-
-### **Frameworks & Technologies**
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Ant Design](https://img.shields.io/badge/AntDesign-0170FE?style=for-the-badge&logo=ant-design&logoColor=white)
-![Recharts](https://img.shields.io/badge/Recharts-FF4A4A?style=for-the-badge&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![yfinance](https://img.shields.io/badge/yfinance-003366?style=for-the-badge&logo=python&logoColor=white)
+- **Typed contracts, not conversation.** Finder → judge → curator → human. Every handoff is a schema. Free-form agent chatter is the bug, not the feature.
+- **Policy outside the model.** For the agent that opens hostile URLs, a second model never sees page text. Blocking is tiered — never one signal, never the page's opinion of itself.
+- **Prompt injection is assumed.** A page instructing the agent that reads it is expected input, not an incident.
+- **Every loop has a stop condition, a budget, a kill switch.** Over budget stops the run. It never degrades quietly into something cheaper and wrong.
+- **Drafts only.** Nothing an agent writes reaches a user until a person accepts it. The gate is the design, not a crutch.
+- **One agent attacks us on purpose.** Red-team loop mutates known scams until they slip through. Every escape becomes a benchmark case with a lifecycle — fixed ones close.
+- **A2A belongs at the institution boundary.** Inside one system it's discovery, negotiation and a wire protocol I don't need — all of it attack surface. Between organisations, it's the right answer. Not before.
 
 ---
 
-## 🏆 Project Highlights
+## 03 · I write the exams frontier agents fail
 
-### 🚀 Original Projects
+Container-isolated benchmark tasks: one sealed image, a prompt, a digest-pinned environment, a
+reference solution, and a verifier that has to be impossible to cheat.
 
-#### 📝 [HASHHAWKS](https://github.com/CODER7657/HashHawks1)
-**TypeScript | Blockchain Development Platform**
-- • Advanced blockchain dev environment & tooling
-- • Modern TS architecture, smart contract deploy/test/playground
+`▸` **Nonlinear dynamics.** Two-module enzymatic oscillator, four coupled ODEs, shared cofactor
+pool. Recover three hidden rate constants from a noisy partial series, forecast under a new feed
+rate, then locate and *classify* the Hopf bifurcation where oscillation starts. The difficulty
+lives in the first Lyapunov coefficient. Expert time estimate: **8 hours.**
 
-#### 🌐 [myselfpavan](https://github.com/CODER7657/myselfpavan)
-**JavaScript | Personal Portfolio & Showcase**
-- • Interactive personal dev portfolio
-- • Full-stack, dynamic content, SEO optimized
+`▸` **SQL that punishes shortcuts.** Weekly retention cohorts over an event log with every scar of
+a real pipeline — webhook retries, mixed timezone offsets, and identity merges that are
+**time-gated and multi-hop**. An event before a merge must not route through it; a later event
+with the same raw id must. Canonical-id resolution stops being a lookup and becomes a walk.
 
-#### 📜 [VeriServe_block](https://github.com/CODER7657/VeriServe_block)
-**JavaScript | Blockchain Certificate Verification**
-- • Decentralized, tamper-proof credential management
-- • Institution & individual-friendly UX
+<img src="assets/verifier.svg" width="100%" alt="Oracle scores 1.00, an agent that does nothing scores 0.00, and a solution sabotaged on purpose also scores 0.00" />
 
-#### 🔄 [VortiFi](https://github.com/CODER7657/VortiFi)
-**JavaScript | Decentralized Voting dApp**
-- • Blockchain-based voting, smart contract security, cross-chain
+**The verifier matters more than the task.** A grader that asks *"did a file appear?"* loses to
+`touch`. So I corrupt one field of my own reference solution and re-run: three tests still pass,
+the fourth catches it, **reward drops to zero.** Only then is the task real.
 
-#### 💼 [portfolio2](https://github.com/CODER7657/portfolio2)
-**TypeScript | Enhanced Portfolio Platform**
-- • Modern portfolio platform, UI/UX, integrated showcase
+Same rule on the product side. *No accuracy number* is worse than a bad one — so the eval corpus
+is held out of the retrieval store, scored per language, and run in CI. A system graded on its
+own notes is fiction.
 
-#### 🔒 [cyber-web3-bloom](https://github.com/CODER7657/cyber-web3-bloom) *(Private)*
-**TypeScript | Cybersecurity & Web3 Integration Platform**
-- • Web3/cybersecurity tools, threat detection
+<details>
+<summary><b>Repair work — what I fix in a benchmark that's already broken</b></summary>
 
-#### 🐍 [codes-](https://github.com/CODER7657/codes-)
-**Python | Programming Solutions & Algorithms**
-- • Algorithmic challenges, DSA with explanations
+<br />
 
-#### 📄 [CODER7657](https://github.com/CODER7657/CODER7657)
-**Profile Repository | This profile README**
+| Defect | Why it invalidates the benchmark |
+|---|---|
+| Artifact path pointed where nothing was written | Every run fails for a reason unrelated to the agent |
+| Unpinned base image | The environment drifts; last month's score means nothing |
+| Reference solution left in the agent's image | The agent reads the answer instead of solving |
+| Verifier checked existence, not values | `touch output.json` scores full marks |
+| Reward written to the wrong path | Silent zero, forever |
+| Vague instructions, unnumbered criteria | Two graders, two scores, no signal |
 
-### 🆕 New & Major Recent Projects
+Proof: a deliberately bugged solution failed **only** the test tied to the corrupted field. The
+other three passed. Field-level, not file-exists.
 
-#### ⚖️ [complylite](https://github.com/CODER7657/complylite)
-**Python, FastAPI, React, Ant Design, Docker, DuckDB**
-- Lightweight compliance co-pilot for brokers
-- Rule-based & ML detection, dashboarding, audit-ready
-
-#### 🌾 [kisan_mitra](https://github.com/CODER7657/kisan_mitra) *(Private)*
-**Python (FastAPI), SvelteKit/TypeScript, OpenAI/Whisper**
-- AI-driven platform for agri video/audio diagnostics, insights, and multilingual reporting
-
-#### 🏩 [namaste-icd11-integration](https://github.com/CODER7657/namaste-icd11-integration) *(Private/Early)*
-**Docker, Shell, HTML/JS (Python in progress)**
-- Microservice for ICD-11 health data integration
-
-#### 📊 [port_stock](https://github.com/CODER7657/port_stock)
-**Python, yfinance, prettytable**
-- CLI stock portfolio tracker: real data, gain/loss, user-friendly
-
-#### 🎤 [voice-emotion-detection](https://github.com/CODER7657/voice-emotion-detection)
-**Python, TensorFlow, PyQt5**
-- Real-time CNN for audio emotion detection, both GUI & CLI
+</details>
 
 ---
 
-### 🔗 Forked Projects with Major Contributions
+## 04 · Stack, live
 
-#### 🔐 [Quantum Chat](https://github.com/CODER7657/quantum_crypto)
-**JavaScript | Quantum Cryptography Implementation**
-- • Forked from [Ayush3422/quantum_crypto](https://github.com/Ayush3422/quantum_crypto)
-- • Advanced quantum crypto, major UI and security contributions
+<table>
+<tr>
+<td width="46%" valign="top">
 
-#### 🎮 [hashhawks-3d-showcase](https://github.com/CODER7657/hashhawks-3d-showcase)
-**TypeScript | 3D Interactive Blockchain Showcase**
-- • Forked from [Ayush3422/hashhawks-3d-showcase](https://github.com/Ayush3422/hashhawks-3d-showcase)
-- • 3D web, Three.js, contributed immersive content & features
+<img src="assets/radar.svg" width="100%" alt="Radar sweeping the stack in production" />
 
----
+</td>
+<td valign="top">
 
-### 📊 Project Statistics
+**How I work**
 
-• **Total Repositories:** 17 (12 Original + 5 Major Forks)  
-• **Primary Languages:** TypeScript, JavaScript, Python  
-• **Focus Areas:** Blockchain, Cybersecurity, AgriTech, HealthTech, Full-Stack Development  
-• **Active Development:** 10+ repositories updated within the last month
+`▸` **Evidence or it doesn't ship.** A claim with no number is a hope.
 
----
+`▸` **Offline first.** The device does the urgent part. Network is an upgrade, not a dependency.
 
+`▸` **Deterministic where it counts.** Same input, same verdict — or it isn't a security product.
 
-## 📈 GitHub Analytics
+`▸` **Fail visibly.** Silent degradation is the most expensive bug class there is.
 
-### 📊 GitHub Statistics
+`▸` **Boring where it's dangerous.** Rules and schemas in the hot path. Creativity behind a gate.
 
-<div align="center">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=CODER7657&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CODER7657&layout=compact&langs_count=7&theme=tokyonight&hide_border=true"/>
-</div>
-<div align="center">
+`▸` **Delete the claim before you defend it.** If a window wasn't protected, the copy says so.
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=CODER7657&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=CODER7657&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
+</td>
+</tr>
+</table>
 
 ---
 
-## 🤝 Community & Open Source
+## 05 · My commit log is the spec
 
-### 🏅 Competitive Programming
-[![LeetCode Stats](https://leetcard.jacoblin.cool/bh7pqspudd?theme=dark&font=Karma&ext=contest)](https://leetcode.com/bh7pqspudd/)
+Real titles, real merges. This is the whole personality:
 
-### 📊 Contribution Metrics
-- **Total Contributions:** 500+ commits across various projects
-- **Open Source:** Contributing to blockchain and security tools
-- **Community:** Active participant in developer forums and hackathons
+```text
+Stop claiming protection across a window where there was none
+Say when a verdict had no corpus behind it
+Stop the test suite reading the developer's real credentials
+Stop the corpus README claiming nine languages have no rules
+Make it visible when scanning works but warnings cannot reach the user
+Stop paying to judge the same scam a thousand times
+Stop agents from spending the quota a scan needs
+Make the verdict trace a specification, before a third engine implements it
+```
 
-### 🐍 Contribution Activity
-![Snake Animation](https://github.com/CODER7657/CODER7657/blob/output/github-contribution-grid-snake.svg)
-
----
-
-## 📬 Connect With Me
-
-<div align="center">
-
-### 🌐 Professional Networks
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pavan-patel-559195261/) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pavanpatela5598@gmail.com) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CODER7657) [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://www.leetcode.com/bh7pqspudd)
-
-### 📧 Contact Information
-- **Email:** pavanpatela5598@gmail.com
-- **LinkedIn:** [pavan-patel-559195261](https://www.linkedin.com/in/pavan-patel-559195261/)
-- **Portfolio:** [Coming Soon - Live Demo]
-
-</div>
+A large share of my merged work deletes a lie the codebase was telling. Not pessimism — the only
+way a safety product earns the word.
 
 ---
 
-## 🎯 Fun Extras
+## 06 · Selected work
 
-### 💡 Developer Quote
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+Three, because three are worth your time.
 
-### 😄 Programming Humor
-![Jokes Card](https://readme-jokes.vercel.app/api?theme=tokyonight)
+| | What it is | Why it's here |
+|---|---|---|
+| **[Raksha AI](https://github.com/CODER7657/raksha-ai)** | Multilingual fraud interception — Android + web + RAG backend | Agent layer, eval harness, provenance trace. 82 commits, still moving |
+| **[POCSO Shield](https://github.com/CODER7657/CRAFTATHON)** | Anonymous child-safety reporting with a jurisdiction-scoped authority workflow | Layered FastAPI, Celery pipelines, on-chain registry, IPFS evidence. Anonymity and accountability in one system |
+| **[ComplyLite](https://github.com/CODER7657/complylite)** | Explainable compliance surveillance for brokers | YAML rule packs + ML, tested detectors, CI, audit-ready output. Explainability *is* the product |
 
 ---
 
-<div align="center">
+## 07 · Also
 
-### 🚀 "Code is poetry, security is art, and blockchain is the future."
+**Two undergraduate degrees, in parallel** — B.E. Computer Engineering, and a B.S. in Computer
+Science at BITS Pilani. Two curricula, one operating system, no extensions requested.
 
-Built with ❤️ by Pavan | Always learning, always building
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=CODER7657&show_icons=true&hide_border=true&hide_title=true&bg_color=0b1119&text_color=8aa0b4&icon_color=4dd6ff&ring_color=3ee08f&title_color=e6f2fb" height="150" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CODER7657&layout=compact&hide_border=true&hide_title=true&bg_color=0b1119&text_color=8aa0b4&title_color=e6f2fb&langs_count=8" height="150" alt="Top languages" />
+</p>
 
-⭐️ **If you find my work interesting, consider starring some repositories!** ⭐️
+<p align="center">
+  <b>Building something that has to be right the first time?</b><br />
+  <a href="mailto:pavanpatela5598@gmail.com">pavanpatela5598@gmail.com</a> ·
+  <a href="https://www.linkedin.com/in/pavan-patel-559195261/">LinkedIn</a> ·
+  <a href="https://x.com/pavan_pate78009">X</a>
+</p>
 
-</div>
+<p align="center"><sub>Every diagram above is hand-written SVG in <code>/assets</code>. No badge generators, no templates. Same as the rest of the work.</sub></p>
