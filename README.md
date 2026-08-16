@@ -37,9 +37,11 @@ budget on every loop.
 
 ```text
   languages   Python · TypeScript · JavaScript · Rust · Kotlin · SQL · Solidity
-  backend     FastAPI · Node.js · Celery · Redis · PostgreSQL · pgvector · Supabase
+  backend     FastAPI · Node.js · Celery · Redis · PostgreSQL · pgvector · Supabase · DuckDB
   frontend    React 19 · Tailwind · Vite · Android
+  ml          TensorFlow CNNs · scikit-learn · sentence-transformers · librosa · faster-whisper
   ai          RAG over pgvector · local embeddings · Groq · Gemini · on-box transcription
+  agentic     Claude Code · Codex · Cursor · Copilot · Gemini CLI · MCP servers · custom skills
   evals       Harbor · Docker · pytest · NumPy · SciPy
   ops         GitHub Actions · Docker Compose · R8 · signed release builds
 ```
