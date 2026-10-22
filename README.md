@@ -1,51 +1,63 @@
-<img src="assets/session.svg" width="100%" alt="Terminal session — Pavan Patel, AI systems engineer: benchmark runs and repo listing" />
+<img src="assets/session.svg" width="100%" alt="Terminal session: Pavan Patel, AI systems engineer. Benchmark runs and repo listing" />
 
 [portfolio](https://myselfpavan.vercel.app) · [linkedin](https://www.linkedin.com/in/pavan-patel-559195261/) · [x](https://x.com/pavan_pate78009) · [pavanpatela5598@gmail.com](mailto:pavanpatela5598@gmail.com)
 
 ---
 
-Bad systems fail loudly. Mine would fail quietly — a scam gets through, a benchmark scores an
-agent that did nothing. So I build the thing, then I build the thing that catches it lying.
+I build AI systems that make real decisions, like approving a payment or flagging a scam, and
+the checks that prove those decisions right. Rules decide where rules can; a model only fills the
+gap, and a deterministic checker sits behind it. Every number on this page comes from a test or
+an eval script in the repo it describes.
 
-**Evals.** 22 container-isolated benchmark tasks, authored. Harbor + Docker, digest-pinned, with
-verifiers built to be un-gameable — nothing counts until the oracle scores 1.00, an agent that
-does nothing scores 0.00, and a solution I sabotaged myself also scores 0.00.
+**Evals.** I wrote 22 container-isolated, digest-pinned Terminal-Bench 2 / Harbor tasks for
+testing autonomous coding agents. Every verifier is checked three ways: the oracle scores 1.00, a
+do-nothing agent scores 0.00, and a solution I sabotaged scores 0.00.
 → [a broken task, taken apart](https://github.com/CODER7657/fix-broken-Terminal-Bench-2-Harbor-)
 
-**Fraud interception.** Rules first on device, retrieval second, model last — so a verdict is
-explained from evidence, never invented. 12 languages, Android + web, RLS-isolated history.
-→ *raksha-ai · private for now, happy to walk through it*
+**Payments.** [PRAMANA](https://github.com/CODER7657/pramana) is a policy-as-code gate between AI
+shopping agents and checkout, with no LLM in any decision. On a 21-case adversarial benchmark it
+cut attack success from 53.8% to 0% while refusing 0 of 8 legitimate payments, at p50 0.26 ms.
+Building it, I found a constraint-enforcement gap in Google's AP2 reference SDK; Google confirmed
+the mechanism, filed upstream as AP2 #339 / #340.
 
-**Agent safety.** Seven agents, none of them in the path between a user and a verdict. Typed
-contracts instead of chatter, a human gate in front of anything users see, a kill switch and a
-budget on every loop.
+**Fraud.** Raksha AI catches scam messages with offline rules first, local multilingual
+embeddings and pgvector retrieval second, and an LLM verdict grounded in that evidence last.
+Maverick Effect AI Challenge 2026 finalist. → *private for now, happy to walk through it*
 
 ---
 
 ### Work
 
-| | | |
+| Project | What it does | Measured |
 |---|---|---|
-| raksha-ai *(private)* | 82 commits | Fraud interception — Kotlin · React 19 · FastAPI · pgvector |
-| [complylite](https://github.com/CODER7657/complylite) | 35 commits | Compliance surveillance — rule packs + ML, tested detectors, CI |
-| [VortiFi](https://github.com/CODER7657/VortiFi) | 18 commits | Verifiable on-chain elections — Solidity + React |
-| [CRAFTATHON](https://github.com/CODER7657/CRAFTATHON) | 17 commits | Anonymous child-safety reporting — FastAPI · Celery · IPFS |
-| [genex-prj](https://github.com/CODER7657/genex-prj) | 10 commits | Wellness chat — crisis detection in front of the model |
-| tradex *(private)* | Rust + Python | Trading platform — FastAPI over a Rust execution engine |
+| [pramana](https://github.com/CODER7657/pramana) | Verification gate for AI-agent payments (AP2, SD-JWT, RBI e-mandate rules) | Attack success 53.8% → 0% on 21 adversarial cases, 0/8 legitimate payments refused, p50 0.26 ms; 691 tests, 94% coverage |
+| raksha-ai *(private)* | Multilingual scam detection: rules, then RAG, then an LLM | 913 backend tests; labeled English/Hindi/Gujarati corpus; 16K+ threat-feed indicators |
+| gtu-radar *(private, team lead)* | Telegram bot that sends each GTU student only the notices for their course, semester and branch | 8-agent pipeline on Redis Streams; 1,000+ tests; 1,346/1,346 live timetable rows parsed correctly |
+| saakshi *(private, team lead)* | CCTV analytics and agentic investigation for Gujarat Police | Rebuilds vehicle routes where plates are unreadable; LangGraph crew behind OPA/Rego gates |
+| [charkha](https://github.com/CODER7657/charkha) | Agent-to-Agent (A2A) mesh from NASA fire data to signed W3C credentials | 4 agents, 344 tests, on Azure (HackOut'26) |
+| [complylite](https://github.com/CODER7657/complylite) | Trade surveillance for a broker's compliance analyst | LightGBM 0.97 PR-AUC vs 0.38 for rules on a time-based holdout (simulated market); 16/20 LLM case notes pass an SQL checker after one retry |
+| [genex-prj](https://github.com/CODER7657/genex-prj) | Wellness chat with crisis routing in front of the model | LLM safety judge took held-out crisis recall from 3/35 to 26/35; 30-prompt red-team suite |
+| [AURA-GUARD](https://github.com/CODER7657/AURA-GUARD) | NO₂ forecasts at 20 EPA monitors, plus a tool-only analyst agent | 33% lower 12 h error than persistence over a held-out year; 40/40 agent answers traceable to tool output |
+| [voice-emotion-detection](https://github.com/CODER7657/voice-emotion-detection) | Speech emotion recognition, evaluated honestly | Found speaker leakage in my own eval; WavLM 0.77 macro-F1 on new speakers, 0.33 on a new dataset (CREMA-D); ONNX on CPU at 505 ms |
+| kisan_mitra *(private)* | Gujarati/Hindi voice crop assistant for farmers | Photo check 64.9% on field photos vs 36% when trained on lab photos; 0 doses or brands in 28 red-team prompts |
 
-### Stack
+### Skills
 
 ```text
-  languages   Python · TypeScript · JavaScript · Rust · Kotlin · SQL · Solidity
-  backend     FastAPI · Node.js · Celery · Redis · PostgreSQL · pgvector · Supabase · DuckDB
-  frontend    React 19 · Tailwind · Vite · Android
-  ml          TensorFlow CNNs · scikit-learn · sentence-transformers · librosa · faster-whisper
-  ai          RAG over pgvector · local embeddings · Groq · Gemini · on-box transcription
-  agentic     Claude Code · Codex · Cursor · Copilot · Gemini CLI · MCP servers · custom skills
-  evals       Harbor · Docker · pytest · NumPy · SciPy
-  ops         GitHub Actions · Docker Compose · R8 · signed release builds
+  languages      Python · TypeScript · JavaScript · SQL · Java · C++ · Kotlin · Solidity
+  ml / data      PyTorch · TensorFlow/Keras · scikit-learn · Hugging Face Transformers · sentence-transformers
+                 Pandas · NumPy · SciPy · DuckDB · librosa · faster-whisper · ONNX Runtime
+                 CNNs · NLP · text classification · feature engineering · model evaluation
+  llms / agents  RAG · embeddings · pgvector · LangGraph · MCP · Agent2Agent (A2A) · Google ADK · tool calling
+                 multi-agent orchestration · prompt & context engineering · guardrails · human-in-the-loop
+                 OpenAI · Claude · Gemini · Groq APIs
+  eval / safety  LLM and agent evaluation · Terminal-Bench 2 / Harbor task authoring · reward and verifier design
+                 golden datasets · rubric writing · red-team suites · prompt-injection defense
+                 reviewing AI-generated code (Claude Code · Codex · Cursor)
+  backend/cloud  FastAPI · Node.js · REST · Redis Streams · Celery · PostgreSQL · Supabase · JWT/OAuth · Docker
+                 GitHub Actions · pytest · Azure · Oracle Cloud · Vercel · React · Next.js · Android
 ```
 
 ---
 
-<sub>B.E. Computer Engineering · B.S. Computer Science, BITS Pilani — two undergraduate degrees, in parallel.</sub>
+<sub>B.Sc. Computer Science, BITS Pilani (2024 to 2027) · B.E. Computer Science (Data Science), GTU, New LJIET (2024 to 2028) · Ahmedabad, India</sub>

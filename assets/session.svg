@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 476" width="900" height="476" role="img" aria-label="Terminal session: Pavan Patel, AI systems engineer — benchmark runs, work listing and agentic toolchain">
-  <title>pavan@github — whoami --deep</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 476" width="900" height="476" role="img" aria-label="Terminal session: Pavan Patel, AI systems engineer: benchmark runs, work listing and agentic toolchain">
+  <title>pavan@github: whoami --deep</title>
   <defs>
     <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0e1721"/><stop offset="100%" stop-color="#070b10"/>
@@ -52,7 +52,7 @@
 
   <path d="M0 46 H900" stroke="#1b2836" stroke-width="1.5"/>
   <circle cx="26" cy="23" r="5.5" fill="#ff5f57"/><circle cx="46" cy="23" r="5.5" fill="#febc2e"/><circle cx="66" cy="23" r="5.5" fill="#28c840"/>
-  <text class="m" x="450" y="24" text-anchor="middle" font-size="12.5" fill="#5b7085">pavan@github — ~/work — zsh</text>
+  <text class="m" x="450" y="24" text-anchor="middle" font-size="12.5" fill="#5b7085">pavan@github · ~/work · zsh</text>
   <circle class="live" cx="828" cy="23" r="4" fill="#3ee08f"/>
   <text class="m" x="842" y="24" font-size="11" fill="#3ee08f">LIVE</text>
 
@@ -64,9 +64,9 @@
     <g clip-path="url(#c4)"><text class="m" x="40" y="194" font-size="14"><tspan fill="#3ee08f">$</tspan> <tspan fill="#c9d6e2">harbor run --agent oracle,nop,sabotaged</tspan></text></g>
     <g clip-path="url(#c5)"><text class="m" x="40" y="220" font-size="12.5"><tspan fill="#3ee08f">oracle 1.00</tspan><tspan fill="#31465a">  4/4  </tspan><tspan fill="#ff5c5c">nop 0.00</tspan><tspan fill="#31465a">  0/4  </tspan><tspan fill="#ffc857">sabotaged 0.00</tspan><tspan fill="#31465a">  3/4 pass, the 4th catches it</tspan></text></g>
     <g clip-path="url(#c6)"><text class="m" x="40" y="258" font-size="14"><tspan fill="#3ee08f">$</tspan> <tspan fill="#c9d6e2">ls ~/work --sort=substance</tspan></text></g>
-    <g clip-path="url(#c7)"><text class="m" x="40" y="284" font-size="12.5"><tspan fill="#4dd6ff">raksha-ai</tspan><tspan fill="#31465a">   82 commits   </tspan><tspan fill="#8aa0b4">fraud interception at the edge, 12 languages</tspan></text></g>
+    <g clip-path="url(#c7)"><text class="m" x="40" y="284" font-size="12.5"><tspan fill="#4dd6ff">raksha-ai</tspan><tspan fill="#31465a">   913 tests    </tspan><tspan fill="#8aa0b4">scam detection: rules, then RAG, then an LLM</tspan></text></g>
     <g clip-path="url(#c8)"><text class="m" x="40" y="306" font-size="12.5"><tspan fill="#4dd6ff">evals</tspan><tspan fill="#31465a">       22 tasks     </tspan><tspan fill="#8aa0b4">harbor · docker · verifiers built to be un-gameable</tspan></text></g>
-    <g clip-path="url(#c9)"><text class="m" x="40" y="328" font-size="12.5"><tspan fill="#4dd6ff">agents</tspan><tspan fill="#31465a">       7 agents    </tspan><tspan fill="#8aa0b4">typed contracts · human gate · per-agent kill switch</tspan></text></g>
+    <g clip-path="url(#c9)"><text class="m" x="40" y="328" font-size="12.5"><tspan fill="#4dd6ff">pramana</tspan><tspan fill="#31465a">      691 tests   </tspan><tspan fill="#8aa0b4">agent payments gate · no LLM on the money path</tspan></text></g>
     <g clip-path="url(#c10)"><text class="m" x="40" y="368" font-size="14"><tspan fill="#3ee08f">$</tspan> <tspan fill="#c9d6e2">which --agentic</tspan></text></g>
     <g clip-path="url(#c11)"><text class="m" x="40" y="394" font-size="12.5"><tspan fill="#a78bfa">claude code</tspan><tspan fill="#31465a">  ·  </tspan><tspan fill="#a78bfa">codex</tspan><tspan fill="#31465a">  ·  </tspan><tspan fill="#a78bfa">cursor</tspan><tspan fill="#31465a">  ·  </tspan><tspan fill="#a78bfa">copilot</tspan><tspan fill="#31465a">  ·  </tspan><tspan fill="#a78bfa">gemini cli</tspan><tspan fill="#31465a">  ·  </tspan><tspan fill="#8aa0b4">mcp servers · custom skills · subagent fleets</tspan></text></g>
     <g clip-path="url(#c12)"><text class="m" x="40" y="432" font-size="14"><tspan fill="#3ee08f">$</tspan> <tspan fill="#c9d6e2">scroll --for=receipts</tspan></text></g>
