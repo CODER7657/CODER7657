@@ -1,6 +1,6 @@
 <img src="assets/session.svg" width="100%" alt="Terminal session: Pavan Patel, AI systems engineer. Benchmark runs and repo listing" />
 
-[portfolio](https://myselfpavan.vercel.app) · [linkedin](https://www.linkedin.com/in/pavan-patel-559195261/) · [x](https://x.com/pavan_pate78009) · [pavanpatela5598@gmail.com](mailto:pavanpatela5598@gmail.com)
+[portfolio](https://pavanpatel.vercel.app) · [linkedin](https://www.linkedin.com/in/pavan-patel-559195261/) · [x](https://x.com/pavan_pate78009) · [pavanpatela5598@gmail.com](mailto:pavanpatela5598@gmail.com)
 
 ---
 
@@ -24,22 +24,24 @@ the mechanism, filed upstream as AP2 #339 / #340.
 embeddings and pgvector retrieval second, and an LLM verdict grounded in that evidence last.
 Maverick Effect AI Challenge 2026 finalist. → *private for now, happy to walk through it*
 
+**Agents.** #205 of 4,094 builders in HackerRank Orchestrate (October 2026), with a deployed AI agent.
+
 ---
 
 ### Work
 
 | Project | What it does | Measured |
 |---|---|---|
-| [pramana](https://github.com/CODER7657/pramana) | Verification gate for AI-agent payments (AP2, SD-JWT, RBI e-mandate rules) | Attack success 53.8% → 0% on 21 adversarial cases, 0/8 legitimate payments refused, p50 0.26 ms; 691 tests, 94% coverage |
+| [pramana](https://github.com/CODER7657/pramana) · [live](https://pramana-gate.vercel.app) | Verification gate for AI-agent payments (AP2, SD-JWT, RBI e-mandate rules) | Attack success 53.8% → 0% on 21 adversarial cases, 0/8 legitimate payments refused, p50 0.26 ms; 691 tests, 94% coverage |
 | raksha-ai *(private)* | Multilingual scam detection: rules, then RAG, then an LLM | 913 backend tests; labeled English/Hindi/Gujarati corpus; 16K+ threat-feed indicators |
 | gtu-radar *(private, team lead)* | Telegram bot that sends each GTU student only the notices for their course, semester and branch | 8-agent pipeline on Redis Streams; 1,000+ tests; 1,346/1,346 live timetable rows parsed correctly |
 | saakshi *(private, team lead)* | CCTV analytics and agentic investigation for Gujarat Police | Rebuilds vehicle routes where plates are unreadable; LangGraph crew behind OPA/Rego gates |
-| [charkha](https://github.com/CODER7657/charkha) | Agent-to-Agent (A2A) mesh from NASA fire data to signed W3C credentials | 4 agents, 344 tests, on Azure (HackOut'26) |
+| [charkha](https://github.com/CODER7657/charkha) | Agent-to-Agent (A2A) mesh from NASA fire data to signed W3C credentials | 4 agents, 750 tests; built for HackOut'26 |
 | [complylite](https://github.com/CODER7657/complylite) | Trade surveillance for a broker's compliance analyst | LightGBM 0.97 PR-AUC vs 0.38 for rules on a time-based holdout (simulated market); 16/20 LLM case notes pass an SQL checker after one retry |
 | [genex-prj](https://github.com/CODER7657/genex-prj) | Wellness chat with crisis routing in front of the model | LLM safety judge took held-out crisis recall from 3/35 to 26/35; 30-prompt red-team suite |
-| [AURA-GUARD](https://github.com/CODER7657/AURA-GUARD) | NO₂ forecasts at 20 EPA monitors, plus a tool-only analyst agent | 33% lower 12 h error than persistence over a held-out year; 40/40 agent answers traceable to tool output |
+| [AURA-GUARD](https://github.com/CODER7657/AURA-GUARD) · [live](https://aura-guard-live.vercel.app) | Hourly NO₂ forecasts from live EPA AirNow data at US monitors, plus a tool-only analyst agent | 33% lower 12 h error than persistence over a held-out year; 40/40 agent answers traceable to tool output |
 | [voice-emotion-detection](https://github.com/CODER7657/voice-emotion-detection) | Speech emotion recognition, evaluated honestly | Found speaker leakage in my own eval; WavLM 0.77 macro-F1 on new speakers, 0.33 on a new dataset (CREMA-D); ONNX on CPU at 505 ms |
-| kisan_mitra *(private)* | Gujarati/Hindi voice crop assistant for farmers | Photo check 64.9% on field photos vs 36% when trained on lab photos; 0 doses or brands in 28 red-team prompts |
+| kisan_mitra *(private)* · [live](https://kisan-mitra-gilt.vercel.app) | Gujarati/Hindi voice crop assistant for farmers | Photo check 64.9% on field photos vs 36% when trained on lab photos; 0 doses or brands in 28 red-team prompts |
 
 ### Skills
 
