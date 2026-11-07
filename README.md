@@ -20,9 +20,10 @@ cut attack success from 53.8% to 0% while refusing 0 of 8 legitimate payments, a
 Building it, I found a constraint-enforcement gap in Google's AP2 reference SDK; Google confirmed
 the mechanism, filed upstream as AP2 #339 / #340.
 
-**Fraud.** Raksha AI catches scam messages with offline rules first, local multilingual
-embeddings and pgvector retrieval second, and an LLM verdict grounded in that evidence last.
-Maverick Effect AI Challenge 2026 finalist. → *private for now, happy to walk through it*
+**Fraud.** [Raksha AI](https://github.com/CODER7657/raksha-ai) catches scam messages with
+offline rules first, embeddings and pgvector retrieval second, and an LLM verdict grounded in
+that evidence last, by text or voice, in English, Hindi and Gujarati. Maverick Effect AI
+Challenge 2026 finalist. → [try it live](https://frontend-one-sage-77.vercel.app)
 
 **Agents.** #205 of 4,094 builders in HackerRank Orchestrate (October 2026), with a deployed AI agent.
 
@@ -33,7 +34,7 @@ Maverick Effect AI Challenge 2026 finalist. → *private for now, happy to walk 
 | Project | What it does | Measured |
 |---|---|---|
 | [pramana](https://github.com/CODER7657/pramana) · [live](https://pramana-gate.vercel.app) | Verification gate for AI-agent payments (AP2, SD-JWT, RBI e-mandate rules) | Attack success 53.8% → 0% on 21 adversarial cases, 0/8 legitimate payments refused, p50 0.26 ms; 691 tests, 94% coverage |
-| raksha-ai *(private)* | Multilingual scam detection: rules, then RAG, then an LLM | 913 backend tests; labeled English/Hindi/Gujarati corpus; 16K+ threat-feed indicators |
+| [raksha-ai](https://github.com/CODER7657/raksha-ai) · [live](https://frontend-one-sage-77.vercel.app) | Multilingual scam detection: rules, then RAG, then an LLM | 993 backend tests; offline rules caught 48/48 scams (en/hi/gu); 16K+ threat-feed indicators |
 | gtu-radar *(private, team lead)* | Telegram bot that sends each GTU student only the notices for their course, semester and branch | 8-agent pipeline on Redis Streams; 1,000+ tests; 1,346/1,346 live timetable rows parsed correctly |
 | saakshi *(private, team lead)* | CCTV analytics and agentic investigation for Gujarat Police | Rebuilds vehicle routes where plates are unreadable; LangGraph crew behind OPA/Rego gates |
 | [charkha](https://github.com/CODER7657/charkha) | Agent-to-Agent (A2A) mesh from NASA fire data to signed W3C credentials | 4 agents, 750 tests; built for HackOut'26 |
