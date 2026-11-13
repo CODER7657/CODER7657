@@ -15,13 +15,13 @@ gap, a deterministic checker behind it. Every number below comes from a test or 
 | **[charkha](https://github.com/CODER7657/charkha)** · *deploy soon* | Five agents over Google's Agent2Agent protocol, from satellite fire detections to signed W3C carbon credentials, with an append-only hash-chained ledger | **754** tests; every decision one ledger row; six attacks a reviewer can run against it |
 | **[AURA-GUARD](https://github.com/CODER7657/AURA-GUARD)** · [live](https://aura-guard-live.vercel.app) | Hourly NO₂ forecasts at US monitors from live EPA data, scored every hour | **33%** lower 12 h error than persistence over 2025; live MAE vs persistence on the site |
 | **[voice-emotion](https://github.com/CODER7657/voice-emotion-detection)** · [live](https://vemo-api.vercel.app) | Speech emotion recognition that reports its real accuracy, in the browser | Found speaker leakage in my own eval; WavLM **0.75** macro-F1 on unseen speakers |
-| **[kisan_mitra](https://github.com/CODER7657/kisan_mitra)** · [live](https://kisan-mitra-gilt.vercel.app) | Voice crop advice for Gujarat's farmers, with a guard that removes every pesticide dose and brand | **0 doses, 0 brands** in 28 red-team attempts; 224 backend tests |
+| **[kisan_mitra](https://github.com/CODER7657/kisan_mitra)** · [live](https://kisan-mitra-gilt.vercel.app) | Voice crop advice for Gujarat's farmers, with a guard that removes every pesticide dose and brand | **0 doses, 0 brands** in 28 red-team attempts; 379 backend tests |
 
 **Also:** [complylite](https://github.com/CODER7657/complylite) · [live](https://complylite-demo.vercel.app) (trade surveillance; LightGBM 0.97 PR-AUC vs 0.38 for rules, simulated market) ·
 [genex-prj](https://github.com/CODER7657/genex-prj) (crisis routing: held-out recall 3/35 → 26/35, with a CI gate) ·
 [22 Terminal-Bench 2 tasks](https://github.com/CODER7657/fix-broken-Terminal-Bench-2-Harbor-) for evaluating coding agents, each verifier checked three ways.
 
-**Team project I lead:** gtu-radar *(private, Hash-Hawks)*: a Telegram bot that sends each GTU student only the notices for their course, semester and branch; an 8-agent pipeline on Redis Streams, 1,000+ tests, 1,346/1,346 live timetable rows parsed correctly. Lead and top human contributor (69 commits; next, 20).
+**Team project I lead:** gtu-radar *(private, Hash-Hawks)*: a Telegram bot that sends each GTU student only the notices for their course, semester and branch; a rules-first agent pipeline on Redis Streams, live on Azure since 17 Oct 2026, 1,894 tests, 96 of 98 dates read correctly on 30 scanned PDFs. Lead and top contributor (44 of 82 commits; next, 20).
 
 **Building:** trinetra and saakshi (investigation tooling; private until their evaluations are public).
 
